@@ -1,7 +1,7 @@
 var crudApp = new function () {
 
     // An array of JSON objects with values.
-    this.myBooks = [
+    this.Condidates = [
         { ID: '1', Candidate_Name: 'Farangiz Ergashboeva',  Profession: 'Computers', Experince: 4 },
         { ID: '2', Candidate_Name: 'Islom Abdulahatov',  Profession: 'Programming', Experince: 3 },
         { ID: '3', Candidate_Name: 'Fozilhon Buzrukhojaev', Profession: 'Science', Experince: 5 }
@@ -13,8 +13,8 @@ var crudApp = new function () {
     this.createTable = function () {
 
         // Extract value for table header.
-        for (var i = 0; i < this.myBooks.length; i++) {
-            for (var key in this.myBooks[i]) {
+        for (var i = 0; i < this.Condidates.length; i++) {
+            for (var key in this.Condidates[i]) {
                 if (this.col.indexOf(key) === -1) {
                     this.col.push(key);
                 }
@@ -35,13 +35,13 @@ var crudApp = new function () {
         }
 
         // Add rows using JSON data.
-        for (var i = 0; i < this.myBooks.length; i++) {
+        for (var i = 0; i < this.Condidates.length; i++) {
 
             tr = table.insertRow(-1);           // Create a new row.
 
             for (var j = 0; j < this.col.length; j++) {
                 var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = this.myBooks[i][this.col[j]];
+                tabCell.innerHTML = this.Condidates[i][this.col[j]];
             }
 
             // Dynamically create and add elements to table cells with events.
