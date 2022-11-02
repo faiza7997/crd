@@ -2,9 +2,9 @@ var crudApp = new function () {
 
     // An array of JSON objects with values.
     this.myBooks = [
-        { ID: '1', Book_Name: 'Computer Architecture', Category: 'Computers', Price: 125.60 },
-        { ID: '2', Book_Name: 'Asp.Net 4 Blue Book', Category: 'Programming', Price: 56.00 },
-        { ID: '3', Book_Name: 'Popular Science', Category: 'Science', Price: 210.40 }
+        { ID: '1', Candidate_Name: 'Farangiz Ergashboeva',  Profession: 'Computers', Experince: 4 },
+        { ID: '2', Candidate_Name: 'Islom Abdulahatov',  Profession: 'Programming', Experince: 3 },
+        { ID: '3', Candidate_Name: 'Fozilhon Buzrukhojaev', Profession: 'Science', Experince: 5 }
     ]
 
     this.category = ['Business', 'Computers', 'Programming', 'Science'];
